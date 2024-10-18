@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --hero-heading-fs: 5.9375rem;
+  --primary-heading-fs: 3rem;
+  --primary-text-fs: 1.125rem;
+  --primary-demo-fs: 1.25rem;
+  --secondary-title: 1.5rem;
+
+  --redish: #f00044;
+  --paste: #08fff9;
+  --grey: #534c64;
+  --lt-grey: #e4e4e5;
+  --dark-grey: #3c354f;
+  --pink: #ff42a5;
+  --violet: #8758f1;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section {
+  padding: 1rem 0;
+}
+.btn {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: var(--primary-text-fs);
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 3rem;
+  padding: 0.7rem 1.4rem;
+  color: var(--white);
+}
+.container {
+  width: 1140px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.primary-heading {
+  font-size: var(--primary-heading-fs);
+  font-weight: 800;
+}
+.primary-text {
+  font-size: var(--primary-text-fs);
+  font-weight: 400;
+  color: var(--grey);
+  line-height: 30px;
+  margin: 1.5rem 0;
+}
+.primary-demo {
+  font-size: var(--primary-demo-fs);
+  font-weight: 600;
+  color: var(--grey);
+}
+
+/* header starts */
+header {
+  margin-top: 1.3rem;
+  height: 5rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_menu,
+.hero_demo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header_menu a:hover{
+  text-shadow: 0 0 5px var(--redish);
+}
+.header_links {
+  height: 3.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0 .7rem;
+  background-color: var(--lt-grey);
+  border-radius: 1rem;
+}
+
+.header_logo:hover, .footer_logo:hover{
+  scale: 1.03;
+}
+
+/* header ends */
+/* hero section starts */
+.hero {
+  margin-top: 2rem;
+  padding: 30px 0 0 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(236, 236, 236),
+    rgb(255, 251, 254)
+  );
+}
+.hero_heading {
+  font-size: var(--hero-heading-fs);
+  color: var(--violet);
+  font-weight: 900;
+  margin: 1.2rem 0;
+}
+.hero_heading2 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.hero_demo {
+  margin-bottom: 10px;
+}
+.hero_demo img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.hero_btns {
+  margin-top: 2.2rem;
+}
+.hero_btn1,
+.gamer_btn {
+  background-color: var(--pink);
+}
+.hero_btn1:hover,
+.gamer_btn:hover{
+  box-shadow: 0 0 7px var(--pink);
+}
+.hero_btn2 {
+  background-color: var(--paste);
+  margin-left: 10px;
+}
+.hero_btn2:hover{
+  box-shadow: 0 0 7px var(--paste);
+}
+.hero_image {
+  width: 40rem;
+}
+/* hero section ends */
+/* gamer part starts */
+.gamer {
+  background-color: rgb(255, 244, 253);
+}
+.gamer_content {
+  text-align: right;
+}
+/* .gamer_text {
+  margin: 2rem 0;
+} */
+.gamer_btn {
+  margin-bottom: 1.4rem;
+}
+.gamer_sp_text {
+  margin-top: 7px;
+  font-size: 1.3rem;
+  color: var(--grey);
+}
+/* gamer part ends */
+/* online part starts */
+.online {
+  margin: 3rem 0;
+}
+.color_heading {
+  color: var(--violet);
+}
+.online_content {
+  text-align: center;
+}
+.online_items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+.online_item img:hover{
+  outline: 3px solid var(--pink);
+  border-radius: 12px;
+}
+
+.online_item img {
+  margin-bottom: 10px;
+}
+.online_sp_demo {
+  font-weight: 600;
+}
+/* online part ends */
+/* play part starts */
+.play {
+  margin: 2rem 0;
+}
+.play_demo2 {
+  text-align: right;
+}
+.play_demo1,
+.play_demo2 {
+  width: 30%;
+}
+.play_image img {
+  width: 46.25rem;
+}
+
+/* play part ends */
+
+/* career part starts */
+.career {
+  background-color: var(--pink);
+  color: var(--white);
+  position: relative;
+  height: 40rem;
+}
+
+.career_content {
+  width: 52%;
+  padding-top: 25px;
+}
+.career_lists ul li {
+  font-size: var(--primary-demo-fs);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.career_text {
+  font-size: var(--primary-text-fs);
+  font-weight: 400;
+  line-height: 30px;
+  margin: 1.5rem 0;
+}
+.career_list_two {
+  text-align: right;
+}
+.career_btn {
+  background-color: var(--white);
+  color: var(--pink);
+  margin-top: 1.6rem;
+  font-weight: 600;
+  padding: 1.1rem 1.7rem;
+}
+.career_btn:hover{
+  box-shadow: 0 0 7px var(--white);
+}
+
+.career_image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.career_image img {
+  width: 50rem;
+  background-position: right;
+}
+/* career part ends */
+
+/* games part starts */
+.games {
+  background-color: rgb(246, 239, 239);
+  padding: 4rem 0;
+}
+.games_item img {
+  width: 3.75rem;
+}
+.games_item {
+  background-color: var(--white);
+  border-radius: 100px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.games_item:hover {
+  outline: 2px solid var(--redish);
+}
+.games_item_text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.games_wrapper_one {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+/* games part ends */
+
+/* footer starts */
+footer {
+  background-color: var(--black);
+  text-align: center;
+  padding: 4rem 0;
+}
+.footer_logo img {
+  width: 15.8125rem;
+}
+.footer_menu_lists,
+.footer_media_links {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem auto;
+}
+
+.footer_menu_lists {
+  width: 70%;
+  & a {
+    color: var(--white);
+    font-weight: 500;
+    font-size: var(--primary-text-fs);
+  }
+}
+.footer_menu_lists a:hover{
+  text-shadow: 3px 0 10px var(--redish);
+}
+
+.footer_media_links {
+  width: 35%;
+}
+.footer_media_links img {
+  width: 2.3rem;
+}
+
+.footer_menu_links {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  margin: 3rem auto 1rem;
+}
+.footer_menu_links a {
+  color: var(--grey);
+}
+
+.footer_copyright {
+  font-size: 1rem;
+  color: var(--grey);
+}
+
+/* footer ends */
